@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Student Registration Form</h1>
+        <p>Please enter your student information</p>
+    </header>
+
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="Information.html">Registration Form</a>
+        <a href="tables.html">Grades</a>
+        <a href="profile.html">My Profile</a>
+    </nav>
+
+    <main class="form-container">
+
+        <form>
+
+            <label for="studentName">Student Name:</label>
+            <input
+                type="text"
+                id="studentName"
+                name="studentName"
+                placeholder="Enter your name"
+                required
+            >
+
+            <label for="studentNumber">Student Number:</label>
+            <input
+                type="text"
+                id="studentNumber"
+                name="studentNumber"
+                placeholder="Enter your student number"
+                required
+            >
+
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+            >
+
+            <label>Gender:</label>
+
+            <div class="choices">
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
+
+            <label for="course">Course:</label>
+
+            <select id="course" name="course">
+                <option value="BSCS">BSCS</option>
+                <option value="BSIT">BSIT</option>
+            </select>
+
+            <label>Skills:</label>
+
+            <div class="choices">
+                <input type="checkbox" id="html" name="skills" value="HTML">
+                <label for="html">HTML</label>
+
+                <input type="checkbox" id="css" name="skills" value="CSS">
+                <label for="css">CSS</label>
+
+                <input
+                    type="checkbox"
+                    id="javascript"
+                    name="skills"
+                    value="JavaScript"
+                >
+                <label for="javascript">JavaScript</label>
+            </div>
+
+            <label for="file">Upload File:</label>
+            <input type="file" id="file" name="file">
+
+            <button type="submit">Submit Registration</button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Copyright &copy; 2026 Rominick Dulay</p>
+    </footer>
+
+</body>
+</html>

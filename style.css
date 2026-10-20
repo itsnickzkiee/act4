@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f1df;
+    color: #20243b;
+}
+
+header {
+    background-color: #25b8dd;
+    text-align: center;
+    padding: 30px 15px;
+}
+
+header h1 {
+    font-size: 38px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+nav {
+    background-color: #e7a6bc;
+    text-align: center;
+    padding: 18px;
+}
+
+nav a {
+    color: #202020;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 25px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Home page */
+
+.home-container {
+    width: 85%;
+    margin: 40px auto;
+    display: flex;
+    gap: 20px;
+}
+
+.main-content {
+    width: 70%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px gray;
+}
+
+.main-content h2 {
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+aside {
+    width: 30%;
+    background-color: aquamarine;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px gray;
+}
+
+aside h2 {
+    margin-bottom: 20px;
+}
+
+aside p {
+    margin-bottom: 12px;
+}
+
+.button {
+    display: inline-block;
+    background-color: #25a9d2;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #167b9b;
+}
+
+/* Registration form */
+
+.form-container {
+    width: 500px;
+    max-width: 90%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px gray;
+}
+
+form > label {
+    display: block;
+    font-weight: bold;
+    margin-top: 18px;
+    margin-bottom: 7px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="file"],
+select {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #aaaaaa;
+    border-radius: 5px;
+}
+
+.choices {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+
+.choices label {
+    margin-right: 15px;
+}
+
+button {
+    width: 100%;
+    background-color: #25a9d2;
+    color: white;
+    border: none;
+    padding: 13px;
+    margin-top: 25px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #167b9b;
+}
+
+/* Grades page */
+
+.grades-container {
+    width: 85%;
+    margin: 40px auto;
+}
+
+.student-details {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px gray;
+}
+
+.student-details h2 {
+    margin-bottom: 15px;
+}
+
+.student-details p {
+    margin-bottom: 8px;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 3px 8px gray;
+}
+
+th,
+td {
+    border: 1px solid #cccccc;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #25a9d2;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.average {
+    background-color: #e7a6bc;
+    font-weight: bold;
+}
+
+/* Profile page */
+
+.profile-container {
+    padding: 40px 20px;
+}
+
+.profile-card {
+    width: 750px;
+    max-width: 95%;
+    margin: auto;
+    background-color: #f7f7ff;
+    padding: 35px;
+    display: flex;
+    gap: 35px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px gray;
+}
+
+.photo {
+    width: 210px;
+    height: 210px;
+    min-width: 210px;
+    background-color: #b9bac5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.profile-info h2 {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.profile-info h3 {
+    margin-top: 24px;
+    margin-bottom: 5px;
+}
+
+.profile-info ul {
+    margin-left: 20px;
+}
+
+.profile-info li {
+    margin-bottom: 4px;
+}
+
+.quote {
+    font-style: italic;
+}
+
+/* Footer */
+
+footer {
+    background-color: #eadcc8;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 700px) {
+
+    header h1 {
+        font-size: 29px;
+    }
+
+    nav a {
+        display: block;
+        margin: 12px;
+    }
+
+    .home-container {
+        flex-direction: column;
+    }
+
+    .main-content,
+    aside {
+        width: 100%;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-info {
+        width: 100%;
+    }
+}
